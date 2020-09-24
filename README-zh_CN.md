@@ -1,8 +1,9 @@
 # JSON Server [![](https://travis-ci.org/typicode/json-server.svg?branch=master)](https://travis-ci.org/typicode/json-server) [![](https://badge.fury.io/js/json-server.svg)](http://badge.fury.io/js/json-server)
 
-English | [简体中文](./README-zh_CN.md)
-
 Get a full fake REST API with __zero coding__ in __less than 30 seconds__ (seriously)
+__30 秒内__ __零代码__ 构建一个基于假数据的 REST API 服务。
+
+帮助前端开发者快速构建后端 mock 服务，用以数据原型制作与mock开发。
 
 Created with <3 for front-end developers who need a quick back-end for prototyping and mocking.
 
@@ -10,13 +11,13 @@ Created with <3 for front-end developers who need a quick back-end for prototypi
 * [JSONPlaceholder - Live running version](https://jsonplaceholder.typicode.com)
 * [__My JSON Server__ - no installation required, use your own data](https://my-json-server.typicode.com)
 
-See also:
+查看更多:
 * :dog: [husky - Git hooks made easy](https://github.com/typicode/husky)
 * :hotel: [hotel - developer tool with local .localhost domain and https out of the box](https://github.com/typicode/hotel)
 
 <p>&nbsp;</p>
 
-<h2 align="center">金牌赞助商 🥇</h2>
+<h2 align="center">Gold sponsors 🥇</h2>
 
 <p>&nbsp;</p>
 
@@ -28,7 +29,7 @@ See also:
 
 <p>&nbsp;</p>
 
-<h2 align="center">铜牌赞助商 🥉</h2>
+<h2 align="center">Bronze sponsors 🥉</h2>
 
 <p>&nbsp;</p>
 
@@ -40,16 +41,16 @@ See also:
 
 <p>&nbsp;</p>
 
-[成为赞助商并在此展示公司logo](https://github.com/users/typicode/sponsorship)
+[Become a sponsor and have your company logo here](https://github.com/users/typicode/sponsorship)
 
-## 目录
+## Table of contents
 
 <!-- toc -->
 
 - [JSON Server ![](https://travis-ci.org/typicode/json-server) [![](https://badge.fury.io/js/json-server.svg)](http://badge.fury.io/js/json-server)](#json-server-img-srchttpstravis-ciorgtypicodejson-serversvgbranchmaster-alt-img-srchttpsbadgefuryiojsjson-serversvg-alt)
-  - [目录](#目录)
-  - [Getting started](#开始)
-  - [Routes](#路由)
+  - [Table of contents](#table-of-contents)
+  - [Getting started](#getting-started)
+  - [Routes](#routes)
     - [Plural routes](#plural-routes)
     - [Singular routes](#singular-routes)
     - [Filter](#filter)
@@ -88,15 +89,15 @@ See also:
 
 <!-- tocstop -->
 
-## 开始
+## Getting started
 
-安装 JSON Server 
+Install JSON Server 
 
 ```
 npm install -g json-server
 ```
 
-创建 `db.json` 文件并填入一些数据
+Create a `db.json` file with some data
 
 ```json
 {
@@ -110,13 +111,13 @@ npm install -g json-server
 }
 ```
 
-运行 JSON Server
+Start JSON Server
 
 ```bash
 json-server --watch db.json
 ```
 
-现在打开链接 [http://localhost:3000/posts/1](http://localhost:3000/posts/1), 你将得到如下结果
+Now if you go to [http://localhost:3000/posts/1](http://localhost:3000/posts/1), you'll get
 
 ```json
 { "id": 1, "title": "json-server", "author": "typicode" }
